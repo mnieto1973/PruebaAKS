@@ -183,3 +183,4 @@
 /home/fireblade/Documentos/Proyectos/WebAppPersistente/PruebaAKS/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
 /home/fireblade/Documentos/Proyectos/WebAppPersistente/PruebaAKS/obj/Debug/net8.0/PruebaAKS.csproj.AssemblyReference.cache
 /home/fireblade/Documentos/Proyectos/WebAppPersistente/PruebaAKS/obj/Debug/net8.0/PruebaAKS.csproj.CopyComplete
+/home/fireblade/Documentos/Proyectos/WebAppPersistente/PruebaAKS/obj/Debug/net8.0/PruebaAKS.sourcelink.json

@@ -22,4 +22,8 @@
  WORKDIR /app
  COPY --from=publish /app/publish .
  
+ # Copiar los archivos .db al contenedor
+# Asegúrate de que los archivos .db estén en el mismo directorio que tu Dockerfile
+COPY *.db /app/
+
  ENTRYPOINT ["dotnet", "PruebaAKS.dll"]
