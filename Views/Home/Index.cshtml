@@ -1,0 +1,25 @@
+﻿@model PruebaAKS.Models.ViewModelItem   
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Prueba para AKS</p>
+    
+    <h2>Lista de TodoItems</h2>
+
+    <ul>
+        @foreach (var item in Model.Lista)
+        {
+            <li>@item.Nombre</li>
+        }
+    </ul>
+
+    <h2>Agregar un nuevo TodoItem</h2>
+    <form asp-action="Index" method="post">
+        <label for="TodoItem">Nombre del TodoItem:</label>
+        <input type="text" id="TodoItem" name="TodoItem" value="@Model.TodoItem" />
+        <button type="submit">Agregar</button>
+    </form>
+</div>
