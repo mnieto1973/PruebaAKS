@@ -14,6 +14,7 @@ public class HomeController : Controller
     {
 
     _context = context;
+    _context.Database.EnsureCreated ();
     _logger = logger;
     }
     public IActionResult Index()

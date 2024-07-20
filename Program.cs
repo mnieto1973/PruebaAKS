@@ -10,7 +10,7 @@ List<string> targetHostIpAddresses = new List<string> ();
 targetHostIpAddresses.Add("82.98.172.3");
 builder.Services.AddHealthChecks().AddUrlGroup (new Uri ("https://gitdoc.cadema.es"),"API",Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy,
 new string[]{"API"});
-builder.Services.AddDbContext <AppDbContext>(options=>options.UseSqlite ("Data Source=appTodo.db"))                    ;
+
 
 
 
@@ -18,7 +18,8 @@ builder.Services.AddHealthChecksUI(s=>
 {
     s.AddHealthCheckEndpoint ("API","/healthUI/apis");
     s.SetEvaluationTimeInSeconds (300);
-}).AddSqliteStorage ("Data Source = healthchecksPortal.db)");
+}).AddSqliteStorage ("Data Source = /data/healthchecksPortal.db)");
+builder.Services.AddDbContext <AppDbContext>(options=>options.UseSqlite ("Data Source=/data/appTodo.db"))                    ;
 var app = builder.Build();
 
 
