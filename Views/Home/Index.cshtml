@@ -6,18 +6,22 @@
 <div class="text-center">
     <h1 class="display-4">Practica 2 Devops/Cloud UNIR</h1>
     <p></p>
-    <p>Prueba para AKS. Aplicacion con datos persistentes</p>
-    
-   
 
-    <h2>Agregar un nuevo TodoItem</h2>
+    <h2><p>Prueba para AKS. Aplicacion con datos persistentes</p></h2>
+    
+    <p></p>
+     <p></p>
+
+    <h4>Agregar un nuevo Item</h4>
     <form asp-action="Index" method="post">
         <label for="TodoItem">Nombre del TodoItem:</label>
         <input type="text" id="TodoItem" name="TodoItem" value="@Model.TodoItem" />
         <button type="submit">Agregar</button>
     </form>
-
-     <h2>Lista de Registros Grabados</h2>
+ <p></p>
+  <p></p>
+  
+     <h4>Lista de Registros Grabados</h4>
 
     <ul>
         @foreach (var item in Model.Lista)
