@@ -4,17 +4,11 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Prueba para AKS</p>
+    <h1 class="display-4">Practica 2 Devops/Cloud UNIR</h1>
+    <p></p>
+    <p>Prueba para AKS. Aplicacion con datos persistentes</p>
     
-    <h2>Lista de TodoItems</h2>
-
-    <ul>
-        @foreach (var item in Model.Lista)
-        {
-            <li>@item.Nombre</li>
-        }
-    </ul>
+   
 
     <h2>Agregar un nuevo TodoItem</h2>
     <form asp-action="Index" method="post">
@@ -22,4 +16,13 @@
         <input type="text" id="TodoItem" name="TodoItem" value="@Model.TodoItem" />
         <button type="submit">Agregar</button>
     </form>
+
+     <h2>Lista de Registros Grabados</h2>
+
+    <ul>
+        @foreach (var item in Model.Lista)
+        {
+            <li>@item.Nombre</li>
+        }
+    </ul>
 </div>
